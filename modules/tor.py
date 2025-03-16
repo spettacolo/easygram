@@ -25,7 +25,7 @@ class TorClient:
             )
             
             # Initialize the controller
-            self.controller = Controller.from_port(port=str(self.control_port))
+            self.controller = Controller.from_port(port=self.control_port)
             self.controller.authenticate()
 
     async def stop(self):
